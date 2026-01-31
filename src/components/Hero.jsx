@@ -3,7 +3,7 @@ import { Download, Github, Linkedin, Mail } from 'lucide-react';
 
 const Hero = () => {
     const [text, setText] = useState('');
-    const fullText = "Cybersecurity Enthusiast";
+    const fullText = "Flutter Developer || Cybersecurity Specialist || NTI || DEPI";
 
     useEffect(() => {
         let index = 0;
@@ -11,7 +11,7 @@ const Hero = () => {
             setText(fullText.slice(0, index + 1));
             index++;
             if (index > fullText.length) clearInterval(interval);
-        }, 100);
+        }, 50); // Sped up typing animation slightly for longer text
         return () => clearInterval(interval);
     }, []);
 
@@ -71,9 +71,10 @@ const Hero = () => {
                         &gt; {text}<span style={{ animation: 'blink 1s infinite' }}>|</span>
                     </h2>
 
-                    <p style={{ color: 'var(--text-muted)', marginBottom: '2.5rem', maxWidth: '500px' }}>
-                        Computer Science Undergraduate & Cybersecurity Specialist.
-                        Building secure, robust, and scalable digital solutions.
+                    <p style={{ color: 'var(--text-muted)', marginBottom: '2.5rem', maxWidth: '600px', lineHeight: '1.8' }}>
+                        Building secure apps faster than the industry standard. I solve the communication gap
+                        and delivery delays that plague mobile development. NTI graduate, CCNA certified, always available.
+                        Let's build something great.
                     </p>
 
                     <div style={{ display: 'flex', gap: '1rem' }}>
@@ -129,8 +130,9 @@ const Hero = () => {
                         }}>
                             <span style={{ color: '#c084fc' }}>const</span> <span style={{ color: '#fff' }}>securityExpert</span> = {'{'}<br />
                             &nbsp;&nbsp;name: <span style={{ color: '#818cf8' }}>'Ahmed Hussein'</span>,<br />
-                            &nbsp;&nbsp;role: <span style={{ color: '#818cf8' }}>'Cybersecurity'</span>,<br />
+                            &nbsp;&nbsp;role: <span style={{ color: '#818cf8' }}>'Flutter Developer and Cybersecurity'</span>,<br />
                             &nbsp;&nbsp;skills: [<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span style={{ color: '#818cf8' }}>'Mobile Development'</span>,<br />
                             &nbsp;&nbsp;&nbsp;&nbsp;<span style={{ color: '#818cf8' }}>'Penetration Testing'</span>,<br />
                             &nbsp;&nbsp;&nbsp;&nbsp;<span style={{ color: '#818cf8' }}>'Network Security'</span>,<br />
                             &nbsp;&nbsp;&nbsp;&nbsp;<span style={{ color: '#818cf8' }}>'Ethical Hacking'</span><br />
